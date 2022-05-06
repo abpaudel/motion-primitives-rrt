@@ -6,7 +6,7 @@ from planning import move
 # from planning import Link
 
 
-def plot_env(start, goal, obstacles, fill=False):
+def plot_env(start, goal, obstacles, fill=True):
     for poly in obstacles:
         xs, ys = poly.exterior.xy
         plt.plot(xs, ys, 'k')
