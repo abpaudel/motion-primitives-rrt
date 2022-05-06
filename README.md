@@ -25,11 +25,11 @@ optional arguments:
 GIF animations can be generated using the following `ffmpeg` command.
 
 ```
-$ ffmpeg -f image2 -i plan.png -i pose_%d.png -r 30 -filter_complex overlay out.gif
+ffmpeg -f image2 -i plan.png -i pose_%d.png -r 30 -filter_complex overlay out.gif
 ```
 
 ## Results
-The figures below show the generated navigable paths in two environments. Motion primitives used are shown in the top right corner of each figure.
+The figures below show the generated navigable paths in two environments. Motion primitives used are shown on the top right corner of each figure.
 maze_small | maze_large
 :---------:|:-----------:
 ![](results/maze_small_dubins_many.gif) | ![](results/maze_large_dubins_many.gif)
