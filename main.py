@@ -10,9 +10,9 @@ from primitives import dubins_car_primitives, turtlebot_primitives, perpendicula
 
 
 envs = {
-    'maze_small': [utils.load_env_from_file('./envs/maze_small.txt'),
+    'maze_small': [utils.load_env_from_file('./envs/maze_small.txt', buffer=0.1),
                    [-8, -8], [8, -8], [-10, 10], [-10, 10]],
-    'maze_large': [utils.load_env_from_file('./envs/maze_large.txt'),
+    'maze_large': [utils.load_env_from_file('./envs/maze_large.txt', buffer=0.01),
                    [23, 27.5, np.pi / 2], [23, 3.5], [0, 30], [0, 30]]
 }
 
