@@ -42,4 +42,4 @@ maze_small | maze_large
 ![](results/maze_small_turtlebot_pi3_0p75_3.gif) | ![](results/maze_large_turtlebot_pi3_0p75_3.gif)
 
 ## TODO
-[ ] Use motion primitives for final link to goal. Currently, the robot only reaches to the nearest pose from goal, but not the goal itself.
+- [ ] Use motion primitives for final link to goal. Currently, the robot only reaches to the nearest pose from goal, but not the goal itself.
