@@ -31,8 +31,8 @@ def inflate_env(env, r=0.5):
     return inflated_env
 
 
-def load_env_from_file(file):
+def load_env_from_file(file, buffer=0.01):
     coords = np.genfromtxt(file)
-    maze_env = [LineString([x, y]).buffer(0.01)
+    maze_env = [LineString([x, y]).buffer(buffer)
                 for x, y in zip(coords, np.roll(coords, 2))]
     return maze_env
