@@ -1,5 +1,7 @@
 # Motion Primitives based Path Planning with RRT
 
+[Paper](https://arxiv.org/abs/2210.15784)
+
 ## Usage
 ```
 $ python main.py [-h] [--env {maze_small,maze_large}]
@@ -21,6 +23,8 @@ optional arguments:
   --save_frames         Save pose frames to generate animation (default: False)
   --outpath OUTPATH     Path to save results (default: ./results)
 ```
+
+Required Python packages: `numpy`, `matplotlib` and `shapely`. 
 
 GIF animations can be generated using the following `ffmpeg` command.
 
